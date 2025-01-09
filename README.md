@@ -7,12 +7,12 @@ Questa calcolatrice è stata sviluppata in Java con l'obiettivo di fornire un'am
 | Tipo Calcolatrice               | Cosa fa ?                                             |
 |---------------------------------|-------------------------------------------------------|
 |Calcolatrice Semplice            | Somma, Sottrazione, Moltiplicazione, Divisione        |
-|Calcolarrice Scientifica         | Radice                                   |
+|Calcolarrice Scientifica         | RadiceX, RadiceX^2, RadiceX^3, EsponenzialeX, EsponenzialeX^2, EsponenzialeX^3, SinX, CosX, TanX                                   |
 ### Cosa funziona ?
 | Funziona              | Calcoli                                       |
 |-----------------------|-----------------------------------------------|
 | :white_check_mark: | Somma, Sottrazione, Moltiplicazione, Divisione   |
-| :white_check_mark: | Radice                              |
+| :white_check_mark: | RadiceX, RadiceX^2, RadiceX^3, EsponenzialeX, EsponenzialeX^2, EsponenzialeX^3, SinX, CosX, TanX                            |
 
 ### Cosa non funziona ?
 
