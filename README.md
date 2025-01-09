@@ -1,13 +1,13 @@
-# Calcolatrice Universale Java: [![wakatime](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/9300bc5f-7891-4e7a-9dfa-508457d7b54c.svg)](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/9300bc5f-7891-4e7a-9dfa-508457d7b54c)
+#New Universal Calculator in Java: [![wakatime](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/9300bc5f-7891-4e7a-9dfa-508457d7b54c.svg)](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/9300bc5f-7891-4e7a-9dfa-508457d7b54c)
 
-## Descrizione
-Questa calcolatrice è stata sviluppata in Java con l'obiettivo di fornire un'ampia gamma di funzionalità matematiche, da semplici operazioni aritmetiche a conversioni di unità. L'interfaccia utente è progettata per essere intuitiva e facile da usare, rendendola adatta a utenti di tutti i livelli.
+## Description
+This calculator was developed in Java with the aim of providing a wide range of mathematical functionalities, from simple arithmetic operations to unit conversions. The user interface is designed to be intuitive and easy to use, making it suitable for users of all levels.
 
-### Funzionalità:
-| Tipo Calcolatrice               | Cosa fa ?                                             |
+### Functions:
+| Type of Calculator              | What does it do?                                      |
 |---------------------------------|-------------------------------------------------------|
-|Calcolatrice Semplice            | Somma, Sottrazione, Moltiplicazione, Divisione        |
-|Calcolarrice Scientifica         | RadiceX, RadiceX^2, RadiceX^3, EsponenzialeX, EsponenzialeX^2, EsponenzialeX^3, SinX, CosX, TanX                                   |
+|Calculator Simple                | Somma, Sottrazione, Moltiplicazione, Divisione        |
+|Calculator scientific            | RadiceX, RadiceX^2, RadiceX^3, EsponenzialeX, EsponenzialeX^2, EsponenzialeX^3, SinX, CosX, TanX                                   |
 ### Cosa funziona ?
 | Funziona              | Calcoli                                       |
 |-----------------------|-----------------------------------------------|
