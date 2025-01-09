@@ -33,32 +33,52 @@ public class CalcolatriceScientifica {
 
     //Calcolo dell' EsponenzialeX
     public static void calcEsponenzialiX() {
-
+        System.out.print("\nInserisci l'esponente della radice: ");
+        double Y = in.nextInt();
+        System.out.print("\nInserisci il radicando: ");
+        double X = in.nextInt();
+        CalcoloEsponenzialeX calcEspX = new CalcoloEsponenzialeX(X,Y);
+        calcEspX.calcoloEsponenzialeX();
     }
 
     //Calcolo dell' EsponenzialeX^2
     public static void calcEsponenzialiX2() {
-
+        System.out.print("\nInserisci la base: ");
+        double X = in.nextInt();
+        CalcoloEsponenzialeX2 calcEspX2 = new CalcoloEsponenzialeX2(X);
+        calcEspX2.calcoloEsponenzialeX2();
     }
 
     //Calcolo dell' EsponenzialeX^3
     public static void calcEsponenzialiX3() {
-
+        System.out.print("\nInserisci la base: ");
+        double X = in.nextInt();
+        CalcoloEsponenzialeX3 calcEspX3 = new CalcoloEsponenzialeX3(X);
+        calcEspX3.calcoloEsponenzialeX3();
     }
 
     //Calcolo di sinX
     public static void calcSinX() {
-
+        System.out.print("\nInserisci i gradi: ");
+        double GradoSinX = in.nextInt();
+        CalcolaSinX calcolaSinX = new CalcolaSinX(GradoSinX);
+        calcolaSinX.calcoloSinX();
     }
 
     //Calcolo di cosX
     public static void calcCosX() {
-
+        System.out.print("\nInserisci i gradi: ");
+        double GradoCosX = in.nextInt();
+        CalcolaCosX calcolaCosX = new CalcolaCosX(GradoCosX);
+        calcolaCosX.calcoloCosX();
     }
 
     //Calcolo di tanX
     public static void calcTanX() {
-
+        System.out.print("\nInserisci i gradi: ");
+        double GradoTanX = in.nextInt();
+        CalcolaTanX calcolaTanX = new CalcolaTanX(GradoTanX);
+        calcolaTanX.calcoloTanX();
     }
 
     public static void mainScientifico() {
@@ -87,6 +107,24 @@ public class CalcolatriceScientifica {
                 break;
             case 3:
                 calcRadiceX3();
+                break;
+            case 4:
+                calcEsponenzialiX();
+                break;
+            case 5:
+                calcEsponenzialiX2();
+                break;
+            case 6:
+                calcEsponenzialiX3();
+                break;
+            case 7:
+                calcSinX();
+                break;
+            case 8:
+                calcCosX();
+                break;
+            case 9:
+                calcTanX();
                 break;
 
         }
