@@ -1,22 +1,37 @@
 # New Universal Calculator in Java: [![wakatime](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/9300bc5f-7891-4e7a-9dfa-508457d7b54c.svg)](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/9300bc5f-7891-4e7a-9dfa-508457d7b54c)
 
-## Description
-This calculator was developed in Java with the aim of providing a wide range of mathematical functionalities, from simple arithmetic operations to unit conversions. The user interface is designed to be intuitive and easy to use, making it suitable for users of all levels.
+## 📌 Description
+This Java-based calculator provides a wide range of mathematical functionalities, from basic arithmetic to advanced scientific operations. Designed with an intuitive interface, it is accessible for users of all skill levels.
 
-### Functions:
-| Type of Calculator              | What does it do?                                      |
-|---------------------------------|-------------------------------------------------------|
-|Calculator Simple                | Somma, Sottrazione, Moltiplicazione, Divisione        |
-|Calculator scientific            | RadiceX, RadiceX^2, RadiceX^3, EsponenzialeX, EsponenzialeX^2, EsponenzialeX^3, SinX, CosX, TanX                                   |
-### What works?
-| Function              | Calculations                                       |
-|-----------------------|-----------------------------------------------|
-| :white_check_mark: | Somma, Sottrazione, Moltiplicazione, Divisione   |
-| :white_check_mark: | RadiceX, RadiceX^2, RadiceX^3, EsponenzialeX, EsponenzialeX^2, EsponenzialeX^3, SinX, CosX, TanX                            |
+### 🧮 Features:
+| Calculator Type       | Available Operations                                                                         |
+|-----------------------|----------------------------------------------------------------------------------------------|
+| Basic Calculator      | Addition, Subtraction, Multiplication, Division                                              |
+| Scientific Calculator | RootX, Square Root, Cube Root, ExponentialX, X², X³, Trigonometric Functions (sin, cos, tan) |
 
-### What doesn't work?
+### ✅ What works?
+| Feature                | Supported Calculations                                                                       |
+|------------------------|----------------------------------------------------------------------------------------------|
+| ✔ Basic Operations     | Addition, Subtraction, Multiplication, Division                                              |
+| ✔ Scientific Functions | RootX, Square Root, Cube Root, ExponentialX, X², X³, Trigonometric Functions (sin, cos, tan) |
 
-| Doesn't it work?          | Calculations                                          |
-|---------------------------|-------------------------------------------------------|
-| :x:                       | GB, MB, KB, Byte                                      |
-| :x:                       | Valuta - Lavoro in corso...                           |
+### 📸 Screenshots
+| Basic Calculator                                                                                                           | Scientific Calculator                                                                                                           |
+|----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| ![Basic Calculator](https://user-images.githubusercontent.com/88186542/134760073-3b3b3b3b-1b3b-4b3b-8b3b-3b3b3b3b3b3b.png) | ![Scientific Calculator](https://user-images.githubusercontent.com/88186542/134760075-3b3b3b3b-1b3b-4b3b-8b3b-3b3b3b3b3b3b.png) |
+
+### 📦 Installation
+1. Clone the repository
+2. Open the project in an IDE
+3. Run the `Main.java` file
+4. Use the calculator
+5. Enjoy!
+
+### 🚀 Future Improvements
+| Implements          | Unit                        |
+|---------------------|-----------------------------|
+| Add unit conversion | GB, MB, KB, Byte            |
+| Add currency        | Real-time currency exchange |
+| Add history         | Previous calculations       |
+
+
