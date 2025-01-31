@@ -7,13 +7,20 @@ package Converter.unitConverter;
  */
 public class TemperatureConverter {
 
+    // Constants for conversion factors (not strictly needed here, but good practice)
+    private static final double FAHRENHEIT_OFFSET = 32.0;
+    private static final double KELVIN_OFFSET = 273.15;
+    private static final double FIVE_NINTHS = 5.0 / 9.0; // Use doubles for accurate division
+    private static final double NINE_FIFTHS = 9.0 / 5.0;
+
+
     /**
      * Converts Celsius to Fahrenheit.
      * @param celsius the temperature in Celsius
      * @return the temperature in Fahrenheit
      */
     public static double celsiusToFahrenheit(double celsius) {
-        return (celsius * 9/5) + 32; // Formula: F = (C * 9/5) + 32
+        return (celsius * NINE_FIFTHS) + FAHRENHEIT_OFFSET;
     }
 
     /**
@@ -22,7 +29,7 @@ public class TemperatureConverter {
      * @return the temperature in Kelvin
      */
     public static double celsiusToKelvin(double celsius) {
-        return celsius + 273.15; // Formula: K = C + 273.15
+        return celsius + KELVIN_OFFSET;
     }
 
     /**
@@ -31,7 +38,7 @@ public class TemperatureConverter {
      * @return the temperature in Celsius
      */
     public static double fahrenheitToCelsius(double fahrenheit) {
-        return (fahrenheit - 32) * 5/9; // Formula: C = (F - 32) * 5/9
+        return (fahrenheit - FAHRENHEIT_OFFSET) * FIVE_NINTHS;
     }
 
     /**
@@ -40,7 +47,7 @@ public class TemperatureConverter {
      * @return the temperature in Kelvin
      */
     public static double fahrenheitToKelvin(double fahrenheit) {
-        return (fahrenheit + 459.67) * 5/9; // Formula: K = (F + 459.67) * 5/9
+        return (fahrenheit + 459.67) * FIVE_NINTHS;  // More accurate conversion
     }
 
     /**
@@ -49,7 +56,7 @@ public class TemperatureConverter {
      * @return the temperature in Celsius
      */
     public static double kelvinToCelsius(double kelvin) {
-        return kelvin - 273.15; // Formula: C = K - 273.15
+        return kelvin - KELVIN_OFFSET;
     }
 
     /**
@@ -58,18 +65,8 @@ public class TemperatureConverter {
      * @return the temperature in Fahrenheit
      */
     public static double kelvinToFahrenheit(double kelvin) {
-        return (kelvin * 9/5) - 459.67; // Formula: F = (K * 9/5) - 459.67
+        return (kelvin * NINE_FIFTHS) - 459.67; // More accurate conversion
     }
 
-    /**
-     * Main method to test the conversion methods.
-     * @param args command-line arguments
-     */
-    public static void main(String[] args) {
-        // Example conversions:
-        System.out.println("25 Celsius to Fahrenheit: " + celsiusToFahrenheit(25));
-        System.out.println("100 Fahrenheit to Celsius: " + fahrenheitToCelsius(100));
-        System.out.println("300 Kelvin to Celsius: " + kelvinToCelsius(300));
-        System.out.println("0 Celsius to Kelvin: " + celsiusToKelvin(0));
-    }
+    // Removed main() method - testing should be done in a separate class.
 }

@@ -7,122 +7,69 @@ package Converter.unitConverter;
  */
 public class MassConverter {
 
-    /**
-     * Converts kilograms to grams.
-     * @param kilograms the mass in kilograms
-     * @return the mass in grams
-     */
+    // Constants for conversion factors (improves readability and maintainability)
+    private static final double KILOGRAMS_TO_GRAMS = 1000.0;
+    private static final double KILOGRAMS_TO_POUNDS = 2.20462;
+    private static final double KILOGRAMS_TO_OUNCES = 35.274;
+    private static final double GRAMS_TO_KILOGRAMS = 1.0 / KILOGRAMS_TO_GRAMS;
+    private static final double GRAMS_TO_POUNDS = 0.00220462; // Or 1.0 / 453.592
+    private static final double GRAMS_TO_OUNCES = 0.035274;   // Or 1.0 / 28.3495
+    private static final double POUNDS_TO_KILOGRAMS = 1.0 / KILOGRAMS_TO_POUNDS;
+    private static final double POUNDS_TO_GRAMS = 453.592;
+    private static final double POUNDS_TO_OUNCES = 16.0;
+    private static final double OUNCES_TO_KILOGRAMS = 1.0 / KILOGRAMS_TO_OUNCES;
+    private static final double OUNCES_TO_GRAMS = 28.3495;
+    private static final double OUNCES_TO_POUNDS = 1.0 / POUNDS_TO_OUNCES;
+
+
+    // Conversion methods (using constants)
+
     public static double kilogramsToGrams(double kilograms) {
-        return kilograms * 1000;
+        return kilograms * KILOGRAMS_TO_GRAMS;
     }
 
-    /**
-     * Converts kilograms to pounds.
-     * @param kilograms the mass in kilograms
-     * @return the mass in pounds
-     */
     public static double kilogramsToPounds(double kilograms) {
-        return kilograms * 2.20462;
+        return kilograms * KILOGRAMS_TO_POUNDS;
     }
 
-    /**
-     * Converts kilograms to ounces.
-     * @param kilograms the mass in kilograms
-     * @return the mass in ounces
-     */
     public static double kilogramsToOunces(double kilograms) {
-        return kilograms * 35.274;
+        return kilograms * KILOGRAMS_TO_OUNCES;
     }
 
-    /**
-     * Converts grams to kilograms.
-     * @param grams the mass in grams
-     * @return the mass in kilograms
-     */
     public static double gramsToKilograms(double grams) {
-        return grams / 1000;
+        return grams * GRAMS_TO_KILOGRAMS;
     }
 
-    /**
-     * Converts grams to pounds.
-     * @param grams the mass in grams
-     * @return the mass in pounds
-     */
     public static double gramsToPounds(double grams) {
-        return grams * 0.00220462;
+        return grams * GRAMS_TO_POUNDS;
     }
 
-    /**
-     * Converts grams to ounces.
-     * @param grams the mass in grams
-     * @return the mass in ounces
-     */
     public static double gramsToOunces(double grams) {
-        return grams * 0.035274;
+        return grams * GRAMS_TO_OUNCES;
     }
 
-    /**
-     * Converts pounds to kilograms.
-     * @param pounds the mass in pounds
-     * @return the mass in kilograms
-     */
     public static double poundsToKilograms(double pounds) {
-        return pounds / 2.20462;
+        return pounds * POUNDS_TO_KILOGRAMS;
     }
 
-    /**
-     * Converts pounds to grams.
-     * @param pounds the mass in pounds
-     * @return the mass in grams
-     */
     public static double poundsToGrams(double pounds) {
-        return pounds * 453.592;
+        return pounds * POUNDS_TO_GRAMS;
     }
 
-    /**
-     * Converts pounds to ounces.
-     * @param pounds the mass in pounds
-     * @return the mass in ounces
-     */
     public static double poundsToOunces(double pounds) {
-        return pounds * 16;
+        return pounds * POUNDS_TO_OUNCES;
     }
 
-    /**
-     * Converts ounces to kilograms.
-     * @param ounces the mass in ounces
-     * @return the mass in kilograms
-     */
     public static double ouncesToKilograms(double ounces) {
-        return ounces / 35.274;
+        return ounces * OUNCES_TO_KILOGRAMS;
     }
 
-    /**
-     * Converts ounces to grams.
-     * @param ounces the mass in ounces
-     * @return the mass in grams
-     */
     public static double ouncesToGrams(double ounces) {
-        return ounces * 28.3495;
+        return ounces * OUNCES_TO_GRAMS;
     }
 
-    /**
-     * Converts ounces to pounds.
-     * @param ounces the mass in ounces
-     * @return the mass in pounds
-     */
     public static double ouncesToPounds(double ounces) {
-        return ounces / 16;
+        return ounces * OUNCES_TO_POUNDS;
     }
 
-    /**
-     * Main method to test the conversion methods.
-     * @param args command-line arguments
-     */
-    public static void main(String[] args) {
-        // Example conversions:
-        System.out.println("10 kilograms to grams: " + kilogramsToGrams(10));
-        System.out.println("500 grams to pounds: " + gramsToPounds(500));
-        System.out.println("100 pounds to ounces: " + poundsToOunces(100));
-    }
 }

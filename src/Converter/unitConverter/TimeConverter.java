@@ -7,123 +7,70 @@ package Converter.unitConverter;
  */
 public class TimeConverter {
 
-    /**
-     * Converts seconds to minutes.
-     * @param seconds the time in seconds
-     * @return the time in minutes
-     */
+    // Constants for conversion factors (improves readability and maintainability)
+    private static final double SECONDS_TO_MINUTES = 1.0 / 60.0;
+    private static final double MINUTES_TO_SECONDS = 60.0;
+    private static final double SECONDS_TO_HOURS = 1.0 / 3600.0;
+    private static final double HOURS_TO_SECONDS = 3600.0;
+    private static final double SECONDS_TO_DAYS = 1.0 / 86400.0;
+    private static final double DAYS_TO_SECONDS = 86400.0;
+    private static final double MINUTES_TO_HOURS = 1.0 / 60.0;
+    private static final double HOURS_TO_MINUTES = 60.0;
+    private static final double MINUTES_TO_DAYS = 1.0 / 1440.0;
+    private static final double DAYS_TO_MINUTES = 1440.0;
+    private static final double HOURS_TO_DAYS = 1.0 / 24.0;
+    private static final double DAYS_TO_HOURS = 24.0;
+
+
+    // Conversion methods (using constants)
+
     public static double secondsToMinutes(double seconds) {
-        return seconds / 60; // 1 minute = 60 seconds
+        return seconds * SECONDS_TO_MINUTES;
     }
 
-    /**
-     * Converts seconds to hours.
-     * @param seconds the time in seconds
-     * @return the time in hours
-     */
     public static double secondsToHours(double seconds) {
-        return seconds / 3600; // 1 hour = 3600 seconds
+        return seconds * SECONDS_TO_HOURS;
     }
 
-    /**
-     * Converts seconds to days.
-     * @param seconds the time in seconds
-     * @return the time in days
-     */
     public static double secondsToDays(double seconds) {
-        return seconds / 86400; // 1 day = 86400 seconds
+        return seconds * SECONDS_TO_DAYS;
     }
 
-    /**
-     * Converts minutes to seconds.
-     * @param minutes the time in minutes
-     * @return the time in seconds
-     */
     public static double minutesToSeconds(double minutes) {
-        return minutes * 60; // 1 minute = 60 seconds
+        return minutes * MINUTES_TO_SECONDS;
     }
 
-    /**
-     * Converts minutes to hours.
-     * @param minutes the time in minutes
-     * @return the time in hours
-     */
     public static double minutesToHours(double minutes) {
-        return minutes / 60; // 1 hour = 60 minutes
+        return minutes * MINUTES_TO_HOURS;
     }
 
-    /**
-     * Converts minutes to days.
-     * @param minutes the time in minutes
-     * @return the time in days
-     */
     public static double minutesToDays(double minutes) {
-        return minutes / 1440; // 1 day = 1440 minutes
+        return minutes * MINUTES_TO_DAYS;
     }
 
-    /**
-     * Converts hours to seconds.
-     * @param hours the time in hours
-     * @return the time in seconds
-     */
     public static double hoursToSeconds(double hours) {
-        return hours * 3600; // 1 hour = 3600 seconds
+        return hours * HOURS_TO_SECONDS;
     }
 
-    /**
-     * Converts hours to minutes.
-     * @param hours the time in hours
-     * @return the time in minutes
-     */
     public static double hoursToMinutes(double hours) {
-        return hours * 60; // 1 hour = 60 minutes
+        return hours * HOURS_TO_MINUTES;
     }
 
-    /**
-     * Converts hours to days.
-     * @param hours the time in hours
-     * @return the time in days
-     */
     public static double hoursToDays(double hours) {
-        return hours / 24; // 1 day = 24 hours
+        return hours * HOURS_TO_DAYS;
     }
 
-    /**
-     * Converts days to seconds.
-     * @param days the time in days
-     * @return the time in seconds
-     */
     public static double daysToSeconds(double days) {
-        return days * 86400; // 1 day = 86400 seconds
+        return days * DAYS_TO_SECONDS;
     }
 
-    /**
-     * Converts days to minutes.
-     * @param days the time in days
-     * @return the time in minutes
-     */
     public static double daysToMinutes(double days) {
-        return days * 1440; // 1 day = 1440 minutes
+        return days * DAYS_TO_MINUTES;
     }
 
-    /**
-     * Converts days to hours.
-     * @param days the time in days
-     * @return the time in hours
-     */
     public static double daysToHours(double days) {
-        return days * 24; // 1 day = 24 hours
+        return days * DAYS_TO_HOURS;
     }
 
-    /**
-     * Main method to test the conversion methods.
-     * @param args command-line arguments
-     */
-    public static void main(String[] args) {
-        // Example conversions:
-        System.out.println("120 seconds to minutes: " + secondsToMinutes(120));
-        System.out.println("2 hours to minutes: " + hoursToMinutes(2));
-        System.out.println("3 days to hours: " + daysToHours(3));
-        System.out.println("3600 seconds to hours: " + secondsToHours(3600));
-    }
+    // Removed main() method - testing should be done in a separate class.
 }
