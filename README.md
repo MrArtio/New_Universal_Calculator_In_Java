@@ -1,6 +1,6 @@
 # Universal Calculator in Java
 
-[![wakatime](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/9300bc5f-7891-4e7a-9dfa-508457d7b54c.svg)](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/9300bc5f-7891-4e7a-9dfa-508457d7b54c)
+[![wakatime](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/a07ee91e-bd12-4477-a77c-d325e070818a.svg)](https://wakatime.com/badge/user/c87b4f82-d14c-4735-bf74-da24e9289afa/project/a07ee91e-bd12-4477-a77c-d325e070818a)
 
 ## 📌 Description
 This Java-based calculator provides a wide range of mathematical functionalities, from basic arithmetic to advanced scientific operations. Designed with an intuitive interface, it is accessible for users of all skill levels.
